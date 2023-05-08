@@ -2,12 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import NavBar from './Navbar';
+import Cards  from './Cards';
 import reportWebVitals from './reportWebVitals';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <main className='bg-white bg-cover'>
+        {/* navbar */}
+        <section className='min-h-screen'>
+          <NavBar/>
+          {/* main page */}
+          <App/>
+          <Cards/>
+        
+        </section>
+     </main>
+    
   </React.StrictMode>
 );
 
